@@ -244,7 +244,7 @@ body {
     font-size: 14px;
   }
   .header__contacts-social img {
-    height: 20px;
+    height: 25px;
   }
   .logo {
     width: 25%;
@@ -410,6 +410,14 @@ body {
   .delivery__item {
     flex: 0 0 100%;
   }
+  .delivery__item-title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .delivery__item-descr {
+    font-size: 16px;
+  }
 }
 
 .how-we-work {
@@ -428,6 +436,7 @@ body {
 
 .how-we-work__wrapper {
   display: flex;
+  gap: 10px;
   justify-content: center;
   flex-wrap: wrap;
   align-items: baseline;
@@ -438,7 +447,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -478,6 +487,14 @@ body {
   }
   .how-we-work__title {
     font-size: 24px;
+  }
+
+  .how-we-work__item-descr {
+    font-size: 18px;
+  }
+
+  .how-we-work__item {
+    margin: 10px;
   }
 }
 
@@ -783,6 +800,7 @@ body {
 
 .services__short img {
   height: 100%;
+  max-height: 80px;
 }
 
 .services__short:nth-child(odd) {
@@ -818,7 +836,7 @@ body {
 
   .services__long,
   .services__short {
-    font-size: 24px;
+    font-size: 18px;
     min-height: 80px;
     width: 95%;
     height: max-content;
@@ -831,6 +849,11 @@ body {
     margin: 20px auto;
     font-size: 24px;
   }
+
+  .services__short:nth-child(odd) {
+    justify-content: center;
+    gap: 15px;
+}
 }
 
 .advantages {
@@ -967,9 +990,16 @@ body {
   }
   .advantages__we-title {
     margin: 20px auto;
+    font-size: 24px;
+  }
+
+  .advantages__we-list {
+    padding: 10px;
   }
   .advantages__we-list li {
     margin-bottom: 20px;
+    margin-left: 35px;
+    font-size: 18px;
   }
 
   .advantages__title {
@@ -1166,6 +1196,12 @@ body {
   box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.22);
 }
 
+@media (max-width: 425px) {
+  .gallery__item-title {
+    font-size: 24px;
+  }
+}
+
 .blog__item {
   position: relative;
   min-width: 300px;
@@ -1188,6 +1224,12 @@ body {
   font-weight: bold;
   max-width: 95%;
   text-align: center;
+}
+
+@media (max-width: 425px) {
+  .blog__item-title {
+    font-size: 24px;
+  }
 }
 
 .partners__wrapper {
@@ -1285,6 +1327,14 @@ body {
   .electrolux__title {
     font-size: 40px;
   }
+
+  .electrolux__descr {
+    font-size: 18px;
+  }
+
+  .electrolux__btn {
+    font-size: 24px;
+  }
 }
 
 .footer {
@@ -1381,7 +1431,7 @@ body {
     padding: 20px;
   }
   .footer__links-item a {
-    font-size: 14px;
+    font-size: 18px;
   }
  .footer__wrapper {
   flex-wrap: wrap;
@@ -1633,7 +1683,11 @@ body {
 @media (max-width: 425px) {
 
   .page-gallery-item__title, .page-gallery-item__descr, .page-gallery-item__info-btn {
-    font-size: 24px;
+    font-size: 18px;
+  }
+
+  .page-gallery-item__info-btn {
+    height: 60px;
   }
 
 }
